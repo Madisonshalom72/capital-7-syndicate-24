@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Keyword plan (keyword-gap map, labeled honestly; no volumes invented):
+     Primary [VERIFIED OPEN]: "how to raise capital for any business" —
+     carried in the H1, first paragraph, title, and meta description.
+     Supporting: "how to start a syndicate", "syndicate CRM",
+     "transfer agent for a private placement", and "private placement
+     memorandum generator". -->
+<title>Capital 7 Syndicate 24 — How to Raise Capital for Any Business — Raise Millions for 1%?</title>
+<meta name="description" content="Learn how to raise capital for any business with Capital 7 Syndicate 24: follow the private placement roadmap, use the private placement memorandum generator, understand the transfer agent for a private placement, and track the raise in a syndicate CRM.">
+<style>
+:root{
+  --bg:#0a0a0c; --panel:#141416; --panel2:#1b1b1f; --gold:#d4af37; --gold2:#f0d778;
+  --ink:#f2ead2; --mut:#a89f83; --line:#2c2a22; --ok:#7dc47f; --bad:#e07a6a;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,'Times New Roman',serif;line-height:1.55}
+a{color:var(--gold2)}
+.wrap{max-width:1060px;margin:0 auto;padding:0 18px}
+/* ticker */
+/* ---- moving ticker (the standard component, same as Build A Trust 24) ---- */
+.ttk{overflow:hidden;background:#0d0a04;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.ttk-track{display:flex;width:max-content;animation:ttkScroll 30s linear infinite}
+.ttk:hover .ttk-track{animation-play-state:paused}
+.ttk-seq{display:flex;align-items:center;flex-shrink:0;white-space:nowrap;padding:8px 0;font-family:ui-monospace,'JetBrains Mono',Menlo,Consolas,monospace;font-size:12.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--mut)}
+.ttk-item{padding:0 14px}
+.ttk-item.hot{color:var(--gold2);font-weight:700}
+.ttk-sep{color:var(--gold);opacity:.85}
+@keyframes ttkScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.ttk-track{animation:none}}
+/* content generator */
+.cg-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-bottom:14px}
+.cg-out{display:none;background:#0d0a04;border:1px solid var(--gold);border-radius:12px;padding:18px;margin-top:16px;white-space:pre-wrap;word-break:break-word;font:400 .94rem/1.6 Georgia,serif;color:var(--ink);max-height:520px;overflow:auto}
+.cg-out.open{display:block}
+.cg-note{color:var(--mut);font-size:.85rem;margin-top:10px}
+/* header */
+header.site{border-bottom:1px solid var(--line);background:linear-gradient(180deg,#111,#0a0a0c)}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
+.brand{font-size:22px;letter-spacing:.06em;color:var(--gold)}
+.brand b{color:var(--ink)}
+nav.main a{margin:0 8px;text-decoration:none;color:var(--ink);font-size:15px}
+nav.main a:hover{color:var(--gold2)}
+.btn{display:inline-block;background:linear-gradient(180deg,var(--gold2),var(--gold));color:#191204;border:1px solid #8a6d1f;
+  padding:10px 18px;border-radius:6px;font-weight:bold;cursor:pointer;text-decoration:none;font-size:15px}
+.btn.ghost{background:transparent;color:var(--gold2);border:1px solid var(--gold)}
+.btn.small{padding:6px 12px;font-size:13px}
+.btn:disabled{opacity:.55;cursor:default}
+/* hero */
+.hero{padding:44px 0 26px;text-align:center}
+.hero h1{font-size:clamp(32px,6vw,54px);margin:0 0 12px;color:var(--gold2);line-height:1.12}
+.hero p.lede{font-size:19px;max-width:820px;margin:0 auto 18px}
+.goldline{width:120px;height:3px;background:var(--gold);margin:18px auto;border-radius:2px}
+/* sections */
+section{padding:28px 0}
+h2{color:var(--gold);font-size:28px;margin:0 0 8px}
+h3{color:var(--gold2);margin:14px 0 6px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px;margin:12px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.stepnum{display:inline-block;background:var(--gold);color:#191204;font-weight:bold;border-radius:50%;width:30px;height:30px;line-height:30px;text-align:center;margin-right:8px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}
+th{color:var(--gold2)}
+input,select,textarea{background:var(--panel2);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:9px;width:100%;margin:4px 0 10px;font-family:inherit;font-size:15px}
+label{font-size:13px;color:var(--mut);text-transform:uppercase;letter-spacing:.08em}
+.stat{font-size:30px;color:var(--gold2)}
+.statlab{font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.1em}
+.notice{border:1px solid var(--gold);background:#191604;border-radius:8px;padding:12px 14px;font-size:14px}
+.disclaimer{font-size:13px;color:var(--mut);border-top:1px solid var(--line);margin-top:26px;padding-top:14px}
+footer.site{border-top:1px solid var(--line);padding:22px 0 40px;margin-top:20px}
+.hidden{display:none!important}
+.pill{display:inline-block;border:1px solid var(--gold);color:var(--gold2);border-radius:20px;padding:2px 10px;font-size:12px;margin:2px}
+.checkitem{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed var(--line)}
+.checkitem input{width:auto;margin-top:4px}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.78);display:flex;align-items:center;justify-content:center;z-index:60;padding:16px}
+.modal .box{background:var(--panel);border:1px solid var(--gold);border-radius:12px;max-width:520px;width:100%;padding:26px;text-align:center}
+.modal[hidden]{display:none}
+.rowflex{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.msg{font-size:14px;min-height:20px}
+.msg.ok{color:var(--ok)} .msg.bad{color:var(--bad)}
+.progress{height:12px;background:#26241c;border-radius:6px;overflow:hidden}
+.progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--gold),var(--gold2))}
+/* generated deck slides + documents */
+.slide{background:#0d0d10;border:2px solid var(--gold);border-radius:10px;padding:34px 30px;min-height:300px;margin:0 auto 14px;max-width:820px}
+.slide .kicker{color:var(--gold);letter-spacing:.22em;text-transform:uppercase;font-size:12px}
+.slide h3{font-size:30px;margin:8px 0 12px}
+.slide p{font-size:18px;white-space:pre-wrap}
+.docpage{background:#111114;border:1px solid var(--line);border-radius:8px;padding:26px;max-width:820px;margin:0 auto}
+.docpage p,.docpage li{white-space:pre-wrap}
+.banner{border:3px solid var(--bad);color:#ffb4a6;padding:12px 14px;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;margin-bottom:16px;font-size:14px}
+.sigline{border-top:1px solid var(--ink);margin-top:34px;padding-top:4px;font-size:13px;color:var(--mut)}
+@media print{
+  body.printing-deck .wrap,body.printing-deck header.site,body.printing-deck footer.site,body.printing-deck .ttk,
+  body.printing-doc .wrap,body.printing-doc header.site,body.printing-doc footer.site,body.printing-doc .ttk{display:none!important}
+  body.printing-deck #deckPrintRoot,body.printing-doc #docPrintRoot{display:block!important}
+  .slide{page-break-after:always;min-height:auto}
+  .docpage{border:none}
+}
+#deckPrintRoot,#docPrintRoot{display:none}
+</style>
+</head>
+<body>
+
+<div class="ttk" aria-hidden="true"><div class="ttk-track" id="tickerTrack">
+<div class="ttk-seq"><span class="ttk-item hot">RAISE MILLIONS FOR 1%?</span><span class="ttk-sep">✦</span><span class="ttk-item">HOW TO RAISE CAPITAL</span><span class="ttk-sep">✦</span><span class="ttk-item">STRUCTURE THE COMPANY</span><span class="ttk-sep">✦</span><span class="ttk-item">PRIVATE PLACEMENT MEMORANDUM</span><span class="ttk-sep">✦</span><span class="ttk-item">PITCH DECK</span><span class="ttk-sep">✦</span><span class="ttk-item">TRANSFER AGENT</span><span class="ttk-sep">✦</span><span class="ttk-item">BOUTIQUE FIRMS RAISE THE MONEY</span><span class="ttk-sep">✦</span><span class="ttk-item hot">CAPITAL 7 SYNDICATE 24 — $20/MO</span><span class="ttk-sep">✦</span><span class="ttk-item">PITCH DECK + PAPERWORK GENERATORS</span><span class="ttk-sep">✦</span><span class="ttk-item">EDUCATIONAL ONLY — NOT LEGAL OR SECURITIES ADVICE</span><span class="ttk-sep">✦</span></div>
+<div class="ttk-seq"><span class="ttk-item hot">RAISE MILLIONS FOR 1%?</span><span class="ttk-sep">✦</span><span class="ttk-item">HOW TO RAISE CAPITAL</span><span class="ttk-sep">✦</span><span class="ttk-item">STRUCTURE THE COMPANY</span><span class="ttk-sep">✦</span><span class="ttk-item">PRIVATE PLACEMENT MEMORANDUM</span><span class="ttk-sep">✦</span><span class="ttk-item">PITCH DECK</span><span class="ttk-sep">✦</span><span class="ttk-item">TRANSFER AGENT</span><span class="ttk-sep">✦</span><span class="ttk-item">BOUTIQUE FIRMS RAISE THE MONEY</span><span class="ttk-sep">✦</span><span class="ttk-item hot">CAPITAL 7 SYNDICATE 24 — $20/MO</span><span class="ttk-sep">✦</span><span class="ttk-item">PITCH DECK + PAPERWORK GENERATORS</span><span class="ttk-sep">✦</span><span class="ttk-item">EDUCATIONAL ONLY — NOT LEGAL OR SECURITIES ADVICE</span><span class="ttk-sep">✦</span></div>
+</div></div>
+
+<header class="site">
+  <div class="wrap brandrow">
+    <div class="brand">SYNDICATE <b>CRM 24</b></div>
+    <nav class="main">
+      <a href="#roadmap">The Roadmap</a>
+      <a href="#calculator">Calculator</a>
+      <a href="#pricing">Membership</a>
+      <a href="#crm" data-open-crm>The CRM</a>
+    </nav>
+    <div class="rowflex">
+      <span id="authWho" class="msg"></span>
+      <button class="btn small ghost" id="signInBtn" type="button">Sign in with Google</button>
+      <button class="btn small ghost hidden" id="signOutBtn" type="button">Sign out</button>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ LANDING ============ -->
+  <div class="hero">
+    <h1>How to Raise Capital for Any Business — Raise Millions for 1%?</h1>
+    <p class="lede">That's the question a viral clip asked: where can you go and have people
+    <strong>raise millions of dollars for your company</strong> — and you pay them around 1%?
+    The answer is a method, and the method is a roadmap. Capital 7 Syndicate 24 is the
+    <strong>syndicate CRM</strong> for founders learning <strong>how to raise capital for any business</strong>
+    and <strong>how to start a syndicate</strong>-style private placement in the right order: structure the
+    company first, use the <strong>private placement memorandum generator</strong> to paper it second, and
+    understand the role of a <strong>transfer agent for a private placement</strong> before boutique firms do
+    the raising last. It tracks raises, investors, documents, and firms step by step for $20/mo.</p>
+    <div class="goldline"></div>
+    <p>
+      <a class="btn" href="#crm" data-open-crm>Open the CRM</a>
+      <a class="btn ghost" href="#roadmap">See the 5 steps</a>
+    </p>
+    <p class="msg" id="gateNotice" role="status"></p>
+  </div>
+
+  <section id="roadmap">
+    <h2>The 5-Step Roadmap</h2>
+    <p>The method, in the order it is taught: structure, paper, present, administer, delegate the raise.</p>
+    <div class="grid">
+      <div class="card"><h3><span class="stepnum">1</span>Structure the Company</h3>
+        <p>Before a dollar moves, the company itself has to be structured correctly — the right entity,
+        the right paperwork, the right ownership picture. Boutique firms raise money for
+        <em>structured opportunities</em>; an unstructured company is not one.</p></div>
+      <div class="card"><h3><span class="stepnum">2</span>Write the Private Placement Memorandum</h3>
+        <p>The private placement memorandum is the document that describes the opportunity, the terms,
+        and the risks in writing. It is the paper serious money reads before it moves.</p></div>
+      <div class="card"><h3><span class="stepnum">3</span>Build a Strong Pitch Deck</h3>
+        <p>The deck is the story in slides: the company, the opportunity, the numbers, the ask.
+        The memorandum is the legal paper; the deck is what gets the meeting.</p></div>
+      <div class="card"><h3><span class="stepnum">4</span>Work With a Transfer Agent</h3>
+        <p>A transfer agent handles the investor documentation properly — moving the information,
+        the money, and the paper between the company and the investor, and keeping the records straight.</p></div>
+      <div class="card"><h3><span class="stepnum">5</span>Boutique Firms Raise It — for ~1%</h3>
+        <p>Boutique investment firms exist to raise capital for structured opportunities. They go in and
+        raise the money for you — and the model prices that work at around 1% of what they raise,
+        while they raise millions.</p></div>
+    </div>
+    <div class="notice"><strong>Our educational notes (not from the video):</strong> real-world private
+    placements sit inside securities law — exemptions, investor standards, and filing duties vary by deal
+    and by state. Capital 7 Syndicate 24 teaches and organizes the roadmap above; it does not replace a
+    securities attorney, and nothing here is an offer to sell securities. See the disclaimer below.</div>
+  </section>
+
+  <!-- ============ CALCULATOR (free) ============ -->
+  <section id="calculator">
+    <h2>Raise Calculator</h2>
+    <p>Run the 1% math before you build the raise — and see how many investors a target actually takes.</p>
+    <div class="card">
+      <div class="grid">
+        <div><label for="calcTarget">Raise target ($)</label>
+          <input id="calcTarget" type="number" min="0" step="1000" value="2000000"></div>
+        <div><label for="calcFee">Boutique firm fee (%)</label>
+          <input id="calcFee" type="number" min="0" step="0.1" value="1"></div>
+        <div><label for="calcAvg">Average investor check ($)</label>
+          <input id="calcAvg" type="number" min="0" step="500" value="50000"></div>
+      </div>
+      <button class="btn" id="calcBtn" type="button">Run the numbers</button>
+      <div id="calcOut" style="margin-top:14px" aria-live="polite"></div>
+    </div>
+  </section>
+
+
+  <!-- ============ CONTENT GENERATOR (free) ============ -->
+  <section id="content-generator">
+    <h2>Syndicate Content Generator</h2>
+    <p>Teaching the raise is how people find this page. Pick a topic, a format, and an angle — the generator
+    writes ready-to-post content in the Capital 7 Syndicate 24 voice, with the offers-grid link and the educational
+    disclaimer already in it. Generate again for a fresh variation, then copy and post it.</p>
+    <div class="card">
+      <div class="cg-grid">
+        <div><label for="cgTopic">Topic</label><select id="cgTopic"></select></div>
+        <div><label for="cgFormat">Format</label><select id="cgFormat">
+          <option value="fb">Facebook Post</option>
+          <option value="ig">Instagram Caption</option>
+          <option value="ad">Text Ad</option>
+          <option value="video">Video Hook + Short Script</option>
+          <option value="email">Email / Message</option>
+        </select></div>
+        <div><label for="cgAngle">Angle</label><select id="cgAngle">
+          <option value="percent">The 1% Hook</option>
+          <option value="bankno">The Bank Said No</option>
+          <option value="structure">Structure First</option>
+          <option value="paperwork">Paperwork Ready</option>
+          <option value="investor">Investor Ready</option>
+        </select></div>
+      </div>
+      <div class="rowflex">
+        <button class="btn" id="cgGenerate" type="button">Generate Content</button>
+        <button class="btn ghost" id="cgCopy" type="button" disabled>Copy Generated Content</button>
+      </div>
+      <pre class="cg-out" id="cgOut" aria-live="polite"></pre>
+      <p class="cg-note">Generated content is a starting point — read it before you post it. Any numbers in a
+      generated piece are labeled examples, not promises or guarantees.</p>
+    </div>
+  </section>
+
+  <!-- ============ PRICING / GATE ============ -->
+  <section id="pricing">
+    <h2>Membership — $20/mo</h2>
+    <div class="card">
+      <p><strong>Browse free.</strong> Read the roadmap, run the calculator, look around.
+      The CRM itself — your raises, your investor list, your document pipeline — is the member tool.</p>
+      <p><span class="stat">$20</span> <span class="statlab">/ month — Capital 7 Syndicate 24 full access</span></p>
+      <p>Sign in with Google to start free. When you open the CRM, members go straight in;
+      everyone else gets the membership pop-up.</p>
+      <div class="rowflex">
+        <button class="btn" id="planMonthlyBtn" type="button">Get Capital 7 Syndicate 24 — $20/mo</button>
+        <button class="btn ghost" id="freeSignupBtn" type="button">Sign in free with Google</button>
+      </div>
+      <p class="msg" id="planMsg" role="status"></p>
+    </div>
+  </section>
+
+  <!-- ============ CRM CORE (gated) ============ -->
+  <section id="crm">
+    <h2>The CRM</h2>
+    <div id="crmLocked" class="card">
+      <p>The CRM is the member workspace: dashboard, raises, investors, documents, and firms.</p>
+      <button class="btn" type="button" data-open-crm>Open the CRM</button>
+      <p class="msg" id="crmLockMsg" role="status"></p>
+    </div>
+
+    <div id="crmApp" class="hidden">
+      <!-- Dashboard -->
+      <div class="card">
+        <h3>Dashboard</h3>
+        <div class="grid">
+          <div><div class="stat" id="dashTarget">$0</div><div class="statlab">Total target — all raises</div></div>
+          <div><div class="stat" id="dashCommitted">$0</div><div class="statlab">Committed by investors</div></div>
+          <div><div class="stat" id="dashCollected">$0</div><div class="statlab">Collected</div></div>
+          <div><div class="stat" id="dashFee">$0</div><div class="statlab">Est. boutique fees at 1%</div></div>
+        </div>
+        <div style="margin-top:12px">
+          <div class="statlab">Committed vs. target</div>
+          <div class="progress"><i id="dashBar" style="width:0%"></i></div>
+        </div>
+        <p class="msg" id="dashMsg" role="status"></p>
+      </div>
+
+      <!-- Raises -->
+      <div class="card">
+        <h3>My Raises</h3>
+        <form id="raiseForm">
+          <div class="grid">
+            <div><label for="raiseName">Raise name</label><input id="raiseName" required maxlength="120" placeholder="e.g. Series A — Expansion"></div>
+            <div><label for="raiseCompany">Company</label><input id="raiseCompany" required maxlength="120" placeholder="Company name"></div>
+            <div><label for="raiseTarget">Target amount ($)</label><input id="raiseTarget" type="number" min="0" step="1000" required></div>
+            <div><label for="raiseStatus">Pipeline step</label>
+              <select id="raiseStatus">
+                <option value="1">Step 1 — Structure the company</option>
+                <option value="2">Step 2 — Private placement memorandum</option>
+                <option value="3">Step 3 — Pitch deck</option>
+                <option value="4">Step 4 — Transfer agent</option>
+                <option value="5">Step 5 — Boutique firms raising</option>
+                <option value="6">Closed</option>
+              </select></div>
+          </div>
+          <button class="btn small" type="submit">Add raise</button>
+        </form>
+        <div id="raiseList" style="margin-top:12px"></div>
+      </div>
+
+      <!-- Raise detail: investors + checklist -->
+      <div class="card hidden" id="raiseDetail">
+        <h3 id="detailTitle">Raise detail</h3>
+        <p class="msg" id="detailMsg" role="status"></p>
+        <h3>Document checklist</h3>
+        <div id="checklist"></div>
+        <p class="msg">Tip: the memorandum and deck checklist items open their generators —
+        generating the document checks the item off for this raise.</p>
+
+        <!-- ===== Pitch Deck Generator ===== -->
+        <div id="deckGen" class="hidden" style="margin-top:16px">
+          <h3>Pitch Deck Generator</h3>
+          <form id="deckForm">
+            <div class="grid">
+              <div><label for="deckTagline">Company tagline</label><input id="deckTagline" maxlength="160"></div>
+              <div><label for="deckContact">Contact</label><input id="deckContact" maxlength="160" placeholder="Name · email · phone"></div>
+            </div>
+            <label for="deckProblem">The problem</label><textarea id="deckProblem" rows="3" maxlength="1200"></textarea>
+            <label for="deckSolution">The solution</label><textarea id="deckSolution" rows="3" maxlength="1200"></textarea>
+            <label for="deckMarket">The opportunity / market</label><textarea id="deckMarket" rows="3" maxlength="1200"></textarea>
+            <label for="deckUse">What the money does — use of funds</label><textarea id="deckUse" rows="3" maxlength="1200"></textarea>
+            <label for="deckTerms">Raise terms summary</label><textarea id="deckTerms" rows="3" maxlength="1200"></textarea>
+            <label for="deckTeam">The team</label><textarea id="deckTeam" rows="3" maxlength="1200"></textarea>
+            <label for="deckAsk">The ask</label><textarea id="deckAsk" rows="2" maxlength="600"></textarea>
+            <div class="rowflex">
+              <button class="btn small" type="submit">Build my deck</button>
+              <button class="btn small ghost" type="button" id="deckPrintBtn">Print / save deck as PDF</button>
+            </div>
+          </form>
+          <div id="deckOut" style="margin-top:14px"></div>
+          <div class="rowflex" id="deckNav" style="margin-top:8px"></div>
+        </div>
+
+        <!-- ===== Paperwork Generator ===== -->
+        <div id="docGen" class="hidden" style="margin-top:16px">
+          <h3>Paperwork Generator</h3>
+          <p>Assembles your inputs into a <strong>template</strong> private placement memorandum,
+          an investor intake form, and a transfer-agent engagement checklist. Templates only —
+          a securities attorney reviews and finalizes before any use. See the banner on every document.</p>
+          <form id="docForm">
+            <div class="grid">
+              <div><label for="docIssuer">Issuer / company legal name</label><input id="docIssuer" maxlength="160"></div>
+              <div><label for="docState">State of organization</label><input id="docState" maxlength="80"></div>
+              <div><label for="docOffering">What is being offered (your words)</label><input id="docOffering" maxlength="200" placeholder="e.g. membership interests in the company"></div>
+              <div><label for="docMin">Minimum investment ($, optional)</label><input id="docMin" type="number" min="0" step="500"></div>
+            </div>
+            <label for="docUse">Use of funds</label><textarea id="docUse" rows="3" maxlength="1200"></textarea>
+            <label for="docRisks">Risk notes (your words)</label><textarea id="docRisks" rows="3" maxlength="1200"></textarea>
+            <label for="docAgent">Transfer agent name (optional)</label><input id="docAgent" maxlength="160">
+            <div class="rowflex">
+              <button class="btn small" type="submit">Generate memorandum template</button>
+              <button class="btn small ghost" type="button" id="intakeBtn">Investor intake form</button>
+              <button class="btn small ghost" type="button" id="agentBtn">Transfer-agent checklist</button>
+              <button class="btn small ghost" type="button" id="docPrintBtn">Print / save as PDF</button>
+            </div>
+          </form>
+          <div id="docOut" style="margin-top:14px"></div>
+        </div>
+
+        <!-- ===== Property Profile + photos ===== -->
+        <div id="propBlock" style="margin-top:22px">
+          <h3>Property Profile — leads this raise's pitch deck</h3>
+          <p>For real estate raises: save the property facts and upload photos, and the deck generator inserts a
+          Property Profile right after the title slide — hero photo, photo strip, and the facts — so the deck an
+          investor sees leads with the property. No photos yet? The deck builds exactly as before.</p>
+          <form id="propForm">
+            <div class="grid">
+              <div><label for="propAddress">Property address</label><input id="propAddress" maxlength="200" placeholder="Street, City, ST"></div>
+              <div><label for="propType">Property type</label>
+                <select id="propType">
+                  <option value="">Choose…</option>
+                  <option>Single-family</option><option>Multifamily</option><option>Commercial</option>
+                  <option>Mixed-use</option><option>Land</option><option>Other</option>
+                </select></div>
+              <div><label for="propBeds">Bedrooms</label><input id="propBeds" type="number" min="0" step="1"></div>
+              <div><label for="propBaths">Bathrooms</label><input id="propBaths" type="number" min="0" step="0.5"></div>
+              <div><label for="propSqft">Square feet</label><input id="propSqft" type="number" min="0" step="1"></div>
+              <div><label for="propPrice">Purchase price ($)</label><input id="propPrice" type="number" min="0" step="1000"></div>
+              <div><label for="propRehab">Rehab estimate ($)</label><input id="propRehab" type="number" min="0" step="500"></div>
+              <div><label for="propArv">After-repair value — ARV ($)</label><input id="propArv" type="number" min="0" step="1000"></div>
+            </div>
+            <button class="btn small" type="submit">Save property profile</button>
+          </form>
+          <p class="msg" id="propMsg" role="status"></p>
+          <form id="photoForm" style="margin-top:14px">
+            <label for="photoInput">Property photos</label>
+            <input id="photoInput" type="file" accept="image/jpeg,image/png,image/webp" multiple>
+            <p class="msg">JPG, PNG or WebP — up to 10 MB each. The first photo becomes the hero that leads the deck; change it any time below.</p>
+            <button class="btn small ghost" type="submit">Upload photos</button>
+          </form>
+          <p class="msg" id="photoMsg" role="status"></p>
+          <div id="photoList" style="margin-top:10px"></div>
+        </div>
+
+        <!-- ===== Raise documents ===== -->
+        <div id="docsBlock" style="margin-top:22px">
+          <h3>Raise Documents</h3>
+          <p>Attach the working files for this raise — financials, appraisal, entity documents, signed paperwork.
+          Each file lists here with view/download, and Share works per file.</p>
+          <form id="upForm">
+            <div class="grid">
+              <div><label for="upLabel">File label</label><input id="upLabel" maxlength="120" placeholder="e.g. Appraisal — final"></div>
+              <div><label for="upFile">File</label><input id="upFile" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.txt,image/jpeg,image/png,image/webp"></div>
+            </div>
+            <p class="msg">PDF, Word, Excel, text or images — up to 25 MB per file.</p>
+            <button class="btn small ghost" type="submit">Upload document</button>
+          </form>
+          <p class="msg" id="upMsg" role="status"></p>
+          <div id="upFileList" style="margin-top:10px"></div>
+        </div>
+
+        <h3 style="margin-top:18px">Investors on this raise</h3>
+        <form id="investorForm">
+          <div class="grid">
+            <div><label for="invName">Investor name</label><input id="invName" required maxlength="120"></div>
+            <div><label for="invEmail">Email</label><input id="invEmail" type="email" maxlength="160"></div>
+            <div><label for="invCommitted">Committed ($)</label><input id="invCommitted" type="number" min="0" step="500" value="0"></div>
+            <div><label for="invCollected">Collected ($)</label><input id="invCollected" type="number" min="0" step="500" value="0"></div>
+            <div><label for="invDoc">Document status</label>
+              <select id="invDoc">
+                <option value="not-sent">Documents not sent</option>
+                <option value="sent">Documents sent</option>
+                <option value="signed">Documents signed</option>
+              </select></div>
+          </div>
+          <button class="btn small" type="submit">Add investor</button>
+        </form>
+        <div id="investorList" style="margin-top:12px"></div>
+      </div>
+
+      <!-- Firms -->
+      <div class="card">
+        <h3>Boutique Firms</h3>
+        <p>Your own firm list — the firms you are talking to, and the fee each one charges.
+        The roadmap's model price is around 1%.</p>
+        <form id="firmForm">
+          <div class="grid">
+            <div><label for="firmName">Firm name</label><input id="firmName" required maxlength="120"></div>
+            <div><label for="firmContact">Contact</label><input id="firmContact" maxlength="160" placeholder="Name / email"></div>
+            <div><label for="firmFee">Fee they charge (%)</label><input id="firmFee" type="number" min="0" step="0.1" value="1"></div>
+          </div>
+          <button class="btn small" type="submit">Add firm</button>
+        </form>
+        <div id="firmList" style="margin-top:12px"></div>
+      </div>
+
+      <div class="disclaimer">
+        <p><strong>Inside-the-app reminder:</strong> Capital 7 Syndicate 24 is an educational and planning tool.
+        It is not legal, tax, or securities advice, and it is not an offer to buy or sell any security.
+        Private placements are regulated — consult a licensed securities attorney before structuring,
+        documenting, or accepting money for any raise. Void where prohibited by law.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FREE SIGN-UP CAPTURE ============ -->
+  <section id="signup">
+    <h2>Start Free</h2>
+    <div class="card">
+      <p>Sign in with Google — your free account saves your place, and membership unlocks the CRM.</p>
+      <button class="btn" id="signupGoogleBtn" type="button">Continue with Google</button>
+      <p class="msg" id="signupMsg" role="status"></p>
+    </div>
+  </section>
+
+  <div class="disclaimer">
+    <p><strong>Disclaimer:</strong> Capital 7 Syndicate 24 is an educational and planning tool only. Nothing on
+    this site or in the CRM is legal, tax, financial, or securities advice, and nothing here is an offer
+    to sell — or a solicitation of an offer to buy — any security. Raising capital through a private
+    placement involves regulated activity, disclosure duties, and real risk of loss for investors; the
+    1% boutique-firm figure is the model described in the source material, not a guaranteed market rate.
+    Consult a licensed securities attorney and qualified tax professional before structuring any raise.
+    Educational content only. Void where prohibited by law.</p>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Capital 7 Syndicate 24 — founded by Madison Hoskins. Built on the 5-step private placement roadmap:
+    structure the company · private placement memorandum · pitch deck · transfer agent · boutique firms at ~1%.</p>
+    <p class="msg">Educational and planning tool only — not legal or securities advice. Consult a securities attorney. Void where prohibited by law.</p>
+  </div>
+</footer>
+
+<!-- ============ MEMBERSHIP GATE MODAL ============ -->
+<div class="modal" id="gateModal" hidden role="dialog" aria-modal="true" aria-label="Get full access">
+  <div class="box">
+    <h2 style="margin-top:0">The CRM Is the Member Tool</h2>
+    <p>Browsing is free — the roadmap and the calculator stay open. Your raises, investors,
+    documents, and firms live inside Capital 7 Syndicate 24 membership.</p>
+    <p><span class="stat">$20</span> <span class="statlab">/ month — full access</span></p>
+    <div class="rowflex" style="justify-content:center">
+      <button class="btn" id="gateMonthlyBtn" type="button">Get access — $20/mo</button>
+      <button class="btn ghost" id="gateCloseBtn" type="button">Keep browsing</button>
+    </div>
+    <p class="msg" id="gateMsg" role="status"></p>
+    <p class="msg">Educational/planning tool only — not legal or securities advice. Void where prohibited by law.</p>
+  </div>
+</div>
+
+<div id="deckPrintRoot"></div>
+<div id="docPrintRoot"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-storage-compat.js"></script>
+<script src="syndicate-config.js"></script>
+<script src="syndicate-app.js"></script>
+</body>
+</html>
